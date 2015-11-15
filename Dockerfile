@@ -10,3 +10,6 @@ RUN git clone https://github.com/scalability-llnl/spack.git
 
 WORKDIR /build/spack/spack
 
+RUN ln -s /build/spack/spack/share/spack/setup-env.sh /etc/profile.d
+RUN ln -s /build/spack/spack/share/spack/setup-env.csh /etc/profile.d
+
